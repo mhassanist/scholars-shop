@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="/scholars_shop/static/css/style.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <!-- for favicon -->
+    <!-- <link rel="shortcut icon" type="image/png" href="sampleImage.jpg"> -->
+
+    <script
+      src="https://kit.fontawesome.com/ddebf545f0.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Scholars Shop Food</title>
+  </head>
+  <body>
+    <div class="goal">
+      <p>Connecting students with sellers for a seamless trading experience...</p>
+    </div>
+    <header class="banner">
+      <div class="inner-banner">
+        <div class="logo">
+          <img src="{{ url_for('static', filename='images/logo.png') }}" width="400px" alt="Scholars Shop Logo">
+        </div>
+        <div class="topBar">
+          <h1>{{ category }}</h1>
+          <div class="links">
+            <a href="/login"><i class="fa-regular fa-user"></i>Account</a>
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i>Cart</a>
+            <a href="inbox.html"><i class="fa-regular fa-envelope"></i>Inbox</a>
+          </div>
+        </div>
+      </div>
+        <div class="sideBar">
+          {% for link in menu_links %}
+          <a href="/{{ link }}"><i class="nav-item"></i> {{ link }}</a>
+          {% endfor %}
+        </div>
+    </header>
+    <div class="mainBody">
+      <div class="main_products">
+        <img src="{{ url_for('static', filename='images/' + banner_img) }}" width="50%" alt="{{ category }}">
+      </div>
+      <p>no listed items placeholder</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,173 @@
+input[type=text], input[type=password],select {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px auto;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}  
+.z button{
+    display: block;
+    width: 25%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px auto;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+} 
+.z button:hover {
+    background-color: #45a049;
+}
+
+body.z {
+    background-color: #ffff;
+}
+
+h1, p, body{
+    color: #0a490e;
+}
+
+form {
+    color: #0a490e;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+label, input {
+    color: #0a490e;
+}
+
+input {
+    background-color: white;
+}
+
+button {
+    color: #ffff;
+    background-color: #0a490e;
+    border: 1px solid #ffff;
+    padding: 5px 10px;
+    cursor: pointer;
+} 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #a2cc67;
+}
+.banner.h1{
+    position: relative;
+}
+.banner {
+    flex-direction: column;
+    background-color: rgb(8, 51, 15,0.6);
+    color: white;
+    text-align: center;
+    padding: 0px;
+    width: 100%;
+    height: 20vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    
+}
+.goal{
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-size: small;
+    font-family:cursive;
+    color:#08330f;
+}
+.inner-banner{
+    width:100%;
+    justify-content: flex-end;
+    align-items: center;
+    text-align:center;
+    display:flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.topBar{
+    display: flex;
+    width: 62%;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 1em;
+}
+.topBar{
+    display: flex;
+    width: 62%;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 1em;
+}
+
+.sideBar{
+    width: 70%;
+    display: flex;
+    position:relative;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10em
+}
+
+.logo{
+    margin:0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+.logo img {
+    max-width: 200px;
+    max-height: 200px;
+    margin-right: 100%;
+    padding-right: 50px;
+    height:100%;
+}
+
+.links a, .sideBar a {
+    color: rgba(255, 255, 255, 0.415);
+    text-decoration: none;
+}
+.links a:hover, .sideBar a:hover{
+    color: #08330f;
+    text-decoration: none;
+}
+.dropdown {
+    position: relative; 
+    display: inline-block;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: none;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+.main_products img{
+    width: 100%;
+    max-height: 250px;
+    object-fit:cover
+}
