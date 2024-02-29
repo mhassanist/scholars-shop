@@ -1,0 +1,25 @@
+DROP TABLE IF EXISTS users;
+DROP TABLE IF EXISTS products;
+DROP TABLE IF EXISTS categories;
+
+CREATE TABLE users (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    username TEXT UNIQUE NOT NULL,
+    password TEXT NOT NULL
+);
+
+
+
+CREATE TABLE categories (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL  
+);
+
+CREATE TABLE products (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL,
+    description TEXT NOT NULL,
+    image BLOB NOT NULL,
+    cat_id INTEGER NOT NULL,
+    FOREIGN KEY (cat_id) REFERENCES categories (id)
+);
