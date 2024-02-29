@@ -7,8 +7,8 @@ c = conn.cursor()
 categories = [
     ('Food',),
     ('Fashion',),
-    ('Computing',),
-    ('Phones',),
+    ('Books',),
+    ('Gadgets',),
     ('Electronics',)
 ]
 
